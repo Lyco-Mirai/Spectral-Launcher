@@ -1,0 +1,19 @@
+﻿<Window x:Class="Challenger_Launcher.InitLoadScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Challenger_Launcher"
+        mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterScreen"
+        Title = "Challenger Launcher" Height="512" Width="1024" Icon="/data/ui/icon_small.png" Topmost="True" ResizeMode="NoResize" WindowStyle="None" Activated="WindowActivated">
+    <Grid>
+        <Image Stretch="UniformToFill" Name="LauncherBackground" Source="/data/ui/background.png" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="GameLauncherVersion" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Launcher Build Data" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="LoadingProgressBar" HorizontalAlignment="Center" Height="38" Margin="0,434,0,0" VerticalAlignment="Top" Width="976" Cursor="Wait"/>
+        <TextBlock Name="Text1" HorizontalAlignment="Center" Margin="0,205,0,0" TextWrapping="Wrap" Text="Please Wait" VerticalAlignment="Top" FontSize="32"/>
+        <TextBlock Name="Text2" HorizontalAlignment="Center" Margin="0,253,0,0" TextWrapping="Wrap" Text="Getting things ready for you..." VerticalAlignment="Top" RenderTransformOrigin="0.183,-1.157" FontSize="20"/>
+        <MediaElement x:Name="LoadingIcon1"  Source="data/ui/LoadingIcon_V1.gif" HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" IsMuted="True" Stretch="UniformToFill" UnloadedBehavior="Pause" LoadedBehavior="Play" Volume="0" Margin="0,298,0,0"/>
+    </Grid>
+</Window>

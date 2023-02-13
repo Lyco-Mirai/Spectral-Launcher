@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<RootNamespace>Challenger_Launcher</RootNamespace>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="data/ui/icon_small.png" />
+		<None Remove="data/ui/icon.png" />
+		<None Remove="data/ui/icon_large.png" />
+		<None Remove="data/ui/background.png" />
+		<None Remove="data/ui/LoadingIcon_V1.gif" />
+		<None Remove="data/ui/LoadingIcon_V2.gif" />
+		<None Remove="data/ui/LoadingIcon_V3.gif" />
+		<None Remove="data/ui/LoadingIcon_V4.gif" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Include="App.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="data/ui/icon_small.png" />
+		<Resource Include="data/ui/icon.png" />
+		<Resource Include="data/ui/icon_large.png" />
+		<Resource Include="data/ui/background.png" />
+		<Resource Include="data/ui/LoadingIcon_V1.gif" />
+		<Resource Include="data/ui/LoadingIcon_V2.gif" />
+		<Resource Include="data/ui/LoadingIcon_V3.gif" />
+		<Resource Include="data/ui/LoadingIcon_V4.gif" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="AppSettings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>AppSettings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="AppSettings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>AppSettings.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+
+</Project>

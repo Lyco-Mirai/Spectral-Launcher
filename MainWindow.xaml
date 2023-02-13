@@ -1,0 +1,17 @@
+﻿<Window x:Class="Challenger_Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Challenger_Launcher"
+        mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterScreen"
+        Title="Challenger Launcher" Height="512" Width="1024" Icon="/data/ui/icon_small.png" Topmost="True" ResizeMode="CanMinimize" WindowStyle="None">
+    <Grid>
+        <Image Stretch="UniformToFill" Name="LauncherBackground" Source="/data/UI/background.png" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <TextBlock Name="LauncherVersion" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Launcher Build Data" VerticalAlignment="Top"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="121,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light" Background="#FFB7FF00" BorderBrush="#FF6F7913" Foreground="Black" Cursor="Hand" Click="CheckLauncherUpdates"/>
+        <Button Content="Close Launcher" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" FontFamily="Bahnschrift Light" Background="#FF00EDFF" Foreground="Black" Cursor="Hand" Click="CloseLauncher"/>
+    </Grid>
+</Window>
