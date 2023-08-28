@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Challenger_Launcher
+namespace Spectral_Launcher
 {
     /// <summary>
     /// Interaction logic for App.xaml

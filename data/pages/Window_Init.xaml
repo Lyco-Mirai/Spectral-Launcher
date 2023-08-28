@@ -1,0 +1,16 @@
+﻿<Window x:Class="Spectral_Launcher.data.pages.Window_Init"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spectral_Launcher.data.pages"
+        mc:Ignorable="d"
+        Title="Spectral Launcher" Height="450" Width="800" Icon="/data/ui/icon_small.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Image x:Name="BackgroundImage" Source="/data/pages/backgrounda.png" HorizontalAlignment="Center" Height="452" VerticalAlignment="Center" Width="800" Stretch="UniformToFill"/>
+        <Button x:Name="Close_Launcher_Button" Content="$Close_Launcher_Local" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" Click="CloseLauncher" Cursor="Hand"/>
+        <Button x:Name="PlayLauncher_Button" Content="$PlayLauncher_Local" HorizontalAlignment="Center" Margin="0,379,0,0" VerticalAlignment="Top" Height="36" Width="146" Click="StartLauncher" Cursor="Hand"/>
+        <TextBlock x:Name="StudioName_Text" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="$StudioName_Local" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="LauncherName_Text" HorizontalAlignment="Center" TextWrapping="Wrap" Text="$LauncherName_Local" VerticalAlignment="Top" Width="506" Height="46" FontSize="24" TextAlignment="Center" Margin="0,225,0,0"/>
+    </Grid>
+</Window>

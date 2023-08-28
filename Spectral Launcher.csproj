@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Spectral_Launcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>E:/Spectral Games/Spectral Launcher/Backup1/</UpgradeBackupLocation>
+    <OldToolsVersion>15.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="data/ui/icon_small.png" />
+    <None Remove="data/ui/icon.png" />
+    <None Remove="data/ui/icon_large.png" />
+    <None Remove="data/ui/LoadingIcon_V1.gif" />
+    <None Remove="data/ui/LoadingIcon_V2.gif" />
+    <None Remove="data/ui/LoadingIcon_V3.gif" />
+    <None Remove="data/ui/LoadingIcon_V4.gif" />
+    <None Remove="data/pages/backgrounda.png" />
+    <None Remove="data/pages/backgroundb.png" />
+    <None Remove="data/pages/backgroundc.png" />
+
+    <None Remove="data/UI/themes/default_light/backgrounda.png" />
+    <None Remove="data/UI/themes/default_light/backgroundb.png" />
+    <None Remove="data/UI/themes/default_light/backgroundc.png" />
+    <None Remove="data/UI/themes/default_dark/backgrounda.png" />
+    <None Remove="data/UI/themes/default_dark/backgroundb.png" />
+    <None Remove="data/UI/themes/default_dark/backgroundc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="{d37e2a3e-8545-3a39-9f4f-31827c9124ab}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>d37e2a3e-8545-3a39-9f4f-31827c9124ab</Guid>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="data/ui/icon_small.png" />
+    <Resource Include="data/ui/icon.png" />
+    <Resource Include="data/ui/icon_large.png" />
+    <Resource Include="data/ui/LoadingIcon_V1.gif" />
+    <Resource Include="data/ui/LoadingIcon_V2.gif" />
+    <Resource Include="data/ui/LoadingIcon_V3.gif" />
+    <Resource Include="data/ui/LoadingIcon_V4.gif" />
+    <Resource Include="data/pages/backgrounda.png" />
+    <Resource Include="data/pages/backgroundb.png" />
+    <Resource Include="data/pages/backgroundc.png" />
+	  
+    <Resource Include="data/UI/themes/default_light/backgrounda.png" />
+	<Resource Include="data/UI/themes/default_light/backgroundb.png" />
+	<Resource Include="data/UI/themes/default_light/backgroundc.png" />
+    <Resource Include="data/UI/themes/default_dark/backgrounda.png" />
+    <Resource Include="data/UI/themes/default_dark/backgroundb.png" />
+    <Resource Include="data/UI/themes/default_dark/backgroundc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="properties/Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="properties/Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Spectral_Launcher.properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="accountName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="accountPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="desiredLanguage" Type="Spectral_Launcher.Localization.Language" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="desiredUITheme" Type="Spectral_Launcher.Themes.UITheme" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="defaultLanguage" Type="Spectral_Launcher.Localization.Language" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="defaultUITheme" Type="Spectral_Launcher.Themes.UITheme" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="avalibleLanguages" Type="Spectral_Launcher.Localization.Language[]" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="avalibleUIThemes" Type="Spectral_Launcher.Themes.UITheme[]" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
